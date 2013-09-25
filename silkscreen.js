@@ -21,7 +21,7 @@ Packaged as a TrueType file, Silkscreen weighs 22.7k.
 var Silkscreen = {
 	// Base32-ish all possible combinations of off and on states in a 5-pixel vertical line
 	// 0 is off, 1 is on
-	index: [
+	index: {
 		'00000': 'A',
 		'00001': 'B',
 		'00010': 'C',
@@ -54,9 +54,9 @@ var Silkscreen = {
 		'11101': '5',
 		'11110': '6',
 		'11111': '7'
-	],
+	},
 	// Silkscreen alphabet (minus the Euro symbol) 
-	alpha: [
+	alpha: {
 		'a': 'PUUP',
 		'b': '7VVO',
 		'c': 'ORRK',
@@ -122,7 +122,7 @@ var Silkscreen = {
 		'<': 'YKR',
 		'>': 'RKY',
 		'?': 'QVUI' 
-	]
+	}
 	// * represents a pixel below the baseline, ^ represents a pixel above the cap height
 }
 
